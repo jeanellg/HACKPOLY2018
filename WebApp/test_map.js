@@ -35,5 +35,10 @@ function initMap()
   drop(map, markArray); // will this put them on map
 }
 
-$(document).ready(function(){
-    $('#show-map').on('click',initialize)
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb7xmy4_719uyUnLCPDoacQc2_tUlsFkI"> <!--&callback=initMap-->
+  </script>
+
+
+$(userhome.html).ready(intiMap(){
+    $('#show-map').on('onclick',initialize)

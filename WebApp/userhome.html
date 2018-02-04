@@ -12,9 +12,6 @@
   </style>
 
 
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb7xmy4_719uyUnLCPDoacQc2_tUlsFkI&callback=initMap">
-  </script>
 
 
 </head>
@@ -23,8 +20,10 @@
   <div class="btn-grp">
     <button onclick="document.getElementById('id01').style.display='block'" style="color:black; font-family: 'Offside';">Find a Deed</button>
     <button onclick="document.getElementById('id03').style.display='block'" style="color:black; font-family: 'Offside';">View Your Previous Deeds</button>
-    <button id="show-map" style="color:black; font-family: 'Offside';">Show Kindness Connections</button>
+    <button style="color:black; font-family: 'Offside';"><a href="test3.html">Show Kindness Connections</a></button>
   </div>
+
+  <script src="test_map.js" async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb7xmy4_719uyUnLCPDoacQc2_tUlsFkI"></script>
 
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
