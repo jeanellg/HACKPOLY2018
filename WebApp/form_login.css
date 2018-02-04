@@ -5,6 +5,28 @@ body
     background-repeat: no-repeat;
 }
 
+a {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: none;
+    text-decoration-color: none;
+    background-color: none;
+}
+
+a:visited {
+  text-decoration-color: black;
+}
+
+a:active {
+  text-decoration-color: black;
+}
 #id01
 {
   color:black;

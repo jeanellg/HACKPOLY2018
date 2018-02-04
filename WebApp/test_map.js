@@ -1,4 +1,4 @@
-
+/*
 var showMap = $('#show-map');
 
 function addMarker(map, mark) // marker object {deed: " ", lat: , long};
@@ -42,3 +42,4 @@ function initMap()
 
 $(userhome.html).ready(intiMap(){
     $('#show-map').on('onclick',initialize)
+*/

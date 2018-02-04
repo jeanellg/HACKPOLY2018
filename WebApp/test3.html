@@ -4,17 +4,30 @@
     <style>
        #map {
         height: 400px;
-        width: 100%;
-		border: 3px double pink;
+        width: 50%;
+        position:absolute;
+        left: 25%;
+        top: 20%;
+        border: 10px solid #f4eade;
+        border-radius: 5px;
        }
     </style>
+    <link rel="stylesheet" href="form_login.css">
+    <link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet'>
+    <style>
+    body {
+      font-family: 'Offside';
+      color:white;
+    }
+    </style>
+
   </head>
   <body>
     <h3>Kind Connection</h3>
     <div id="map"></div>
     <script>
-	// would need function to access database and make marker object array
-	function addMarker(map, mark) // marker object {deed: " ", lat: , long};
+
+	function addMarker(map, mark)
 	{
 		newMark = new google.maps.Marker
 		({
@@ -45,7 +58,7 @@
 			zoom: 1,
 			center: center
 		});
-		drop(map, markArray); // will this put them on map
+		drop(map, markArray); 
 	}
     </script>
     <script async defer
