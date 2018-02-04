@@ -5,23 +5,11 @@ body
     background-repeat: no-repeat;
 }
 
-#id01
-{
-  color:black;
-  text-align: center;
-}
 
 #id02
 {
   color: black;
 }
-
-#id03
-{
-  color:black;
-  text-align: center;
-}
-
 #rect_corners {
     border-radius: 15px 50px 30px;
     border: 2px solid #FFFFFF;
@@ -96,18 +84,6 @@ img.avatar {
 
 .container {
     padding: 16px;
-}
-
-.container2 {
-  border-radius: 15px 50px 30px;
-  border: 2px solid ##fff0f0;
-  background: white;
-  padding: 20px;
-  position:absolute;
-  top:30%;
-  bottom:30%;
-  left:25%;
-  right:25%;
 }
 
 
@@ -207,18 +183,4 @@ hr {
     .cancelbtn, .signupbtn {
        width: 100%;
     }
-}
-
-
-.btn-grp button
-{
-  position:relative;
-  left:35%;
-  width:30%;
-  top: 220px;
-  display: block;
-}
-.btn-grp button:not(:last-child)
-{
-  border-bottom:none;
 }

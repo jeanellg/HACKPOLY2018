@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- need list of deeds, randomize button, map of deeds, input location -->
+  <link rel="stylesheet" href="form_login.css">
+  <link href='https://fonts.googleapis.com/css?family=Offside' rel='stylesheet'>
+  <style>
+  body {
+    font-family: 'Offside';
+    color:white;
+  }
+  </style>
+
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb7xmy4_719uyUnLCPDoacQc2_tUlsFkI&callback=initMap">
+  </script>
+
+
+</head>
+
+<body>
+  <div class="btn-grp">
+    <button onclick="document.getElementById('id01').style.display='block'" style="color:black; font-family: 'Offside';">Find a Deed</button>
+    <button onclick="document.getElementById('id03').style.display='block'" style="color:black; font-family: 'Offside';">View Your Previous Deeds</button>
+    <button id="show-map" style="color:black; font-family: 'Offside';">Show Kindness Connections</button>
+  </div>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="container2 animate" action="/action_page.php">
+    <h1>DEED</h1>
+    <div class="container2">
+      <form action="/action_page.php" method="get">
+          <button type="button" style="background-color: #f44336">Accept</button>
+          <button type="button" style="background-color: #f44336" onclick="document.getElementById('id01').style.display='block'">Get Another Deed</button>
+      </form>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<div id="id03" class="modal">
+  <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div class="container2">
+      <h1>Your Deeds</h1>
+      <p>Deed1<br>Deed2</p>
+    </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<div id="id04" class="modal">
+  <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <div class="container2">
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id04');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+</body>
+</html>
