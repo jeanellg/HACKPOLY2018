@@ -1,0 +1,57 @@
+header
+{
+	color: "white";
+	text-align: "center";
+	border-style: double;
+	border-width: 5px;
+}
+
+body
+{
+    background-image: url("https://images.unsplash.com/photo-1495218128687-72d990041786?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae5daa6b1ae369ce0c5f2e9f46e7604f&auto=format&fit=crop&w=1489&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+button {
+  color: white;
+  border-radius: 25px;
+  position:absolute;
+  top:50%;
+  bottom:40%;
+  right:40%;
+  left:20%;
+  padding: 14px 100px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+}
+
+#hide-button { cursor: pointer; display: none; }
+
+
+#rect_corners {
+    border-radius: 15px 50px 30px;
+    border: 2px solid #FFFFFF;
+    /*background: #FFFFFF;*/
+    padding: 20px;
+    position:absolute;
+    top:20%;
+    bottom:20%;
+    left:15%;
+    right:15%;
+
+}
+
+#rectangle_login {
+	background: white;
+  border-radius: 25px;
+  position:absolute;
+  top:50%;
+  bottom:40%;
+  right:40%;
+  left:20%;
+}
